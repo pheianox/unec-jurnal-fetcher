@@ -3,6 +3,12 @@ Fetches student's subjects and all data needed for self analysis
 
 **NOTE:** This script might not work. Constant updates needed
 
+## API
+
+This data is returned when you run script
+
+![Screenshot_2022-12-16_00-09-27](https://user-images.githubusercontent.com/77569421/207963886-b0b2fc30-32c0-42e4-bf82-247d4af235fb.png)
+
 ## Usage
 ### 1. Go to "elektron jurnal" section in your unec kabinet
 
@@ -65,6 +71,4 @@ where
 
 ### 13. Done. You can also copy that data to clipboard by right click on it and select "copy object"
 
-## API
 
-![Screenshot_2022-12-16_00-09-27](https://user-images.githubusercontent.com/77569421/207963886-b0b2fc30-32c0-42e4-bf82-247d4af235fb.png)
