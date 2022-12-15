@@ -1,6 +1,6 @@
 // usage: lib("1000042", "1000097", "4101", "4100").then(console.log);
 
-interface SubjectEntry extends SubjectEntryExtended {
+interface SubjectDataExtended extends SubjectData {
     w____form_id: string
     w____subject_id: string
     subject_name: string 
@@ -8,7 +8,7 @@ interface SubjectEntry extends SubjectEntryExtended {
     subject_credit_count: number
 }
 
-interface SubjectEntryExtended {
+interface SubjectData {
     seminar_lessons: LessonEntry[]              /** seminarlar */
     lecture_lessons: LessonEntry[]              /** muharizeler */
     total_lessons_count: number                 /** seminar + muharize sayi */
@@ -45,7 +45,7 @@ let lib = async function
 
 
     async function getSubjects(doc: Document) {
-        const subjects: SubjectEntry[] = []
+        const subjects: SubjectDataExtended[] = []
         const rows = [...doc.querySelectorAll('#studentEvaluation-grid table tbody tr')].map(row => [...row.children])
         for (const children of rows) {
             const _subjectId = children[1].textContent || ''
@@ -91,7 +91,7 @@ let lib = async function
 
         const missedLessonsUnitPercentage = missedLessonsCount / missedLessonsTotalPercentage
 
-        const performance: SubjectEntryExtended = {
+        const performance: SubjectData = {
             seminar_lessons: seminarLessons,
             lecture_lessons: lectureLessons,
             missed_lessons_total_percentage: missedLessonsTotalPercentage,
