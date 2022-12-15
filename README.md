@@ -4,14 +4,6 @@ Fetches student's subjects and all data needed for self analysis
 **NOTE:** This script might not work. Constant updates needed
 
 ## Usage
-```ts
-// 1. first you need eduYear, enuSemester, lessonType
-// get them by going to journal page and selecting year, then semester, then "seminar" section. 
-// Then look at the url bar you will nee
-// 1. eduYear=1000042&eduSemester=1000097&lessonType=4102
-```
-
-## Usage
 ### 1. Go to "elektron jurnal" section in your unec kabinet
 
 ![image](https://user-images.githubusercontent.com/77569421/207960933-557ceb43-eaf8-4f5a-b807-3519795bff65.png)
